@@ -10,23 +10,23 @@
 // 	}
 // }
 
-pipeline{
-   agent:any
-   stages{
+pipeline {
+   agent any
+   stages {
 	   stage("Build"){
-		   step{
+		   steps {
            echo "Build testing"
 
 		   }
 	   }
 	   stage("test"){
-		   step{
+		    steps {
            echo "test env testing"
 
 		   }
 	   }
 	   stage("IntegrationTest"){
-		   step{
+		   steps {
            echo "IntegrationTest testing"
 
 		   }
